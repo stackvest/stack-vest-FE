@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
         --color-pry-100: hsl(235, 24%, 19%);
         --color-pry-200: hsl(0, 0%, 100%);
         --color-pry-300: hsl(0, 0%, 95%);
+        --color-neu-100: #979797;
         // FONTS
         --font-pry-100: 'Jost', sans-serif;
         
@@ -21,6 +22,8 @@ export const GlobalStyles = createGlobalStyle`
         --border-radius: 0.5rem;
         //ANIMATION 
         --transition: all 0.5s;
+
+        --tablet: 768px;
     }
 
     body{
