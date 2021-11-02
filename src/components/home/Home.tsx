@@ -3,7 +3,7 @@ import {
   HomeContainer,
   HomeHeader,
   HomeLogo,
-  HomeWrap,TabHeaders, TabText
+  HomeWrap,NavWrap,TabHeaders, TabText
 } from "./home.style"
 import logo from "../../assets/logo.svg"
 import accountIcon from "../../assets/account-icon.svg"
@@ -11,7 +11,7 @@ import PageData from "../../data/PageData"
 import PageForm from "../form/PageForm"
 import { useState } from "react"
 import { Button } from '@stacks/ui';
-import { userSession } from '../../auth';
+import { userSession,displayName } from '../../auth';
 
 
 function Home() {
@@ -28,7 +28,14 @@ function Home() {
       <HomeWrap>
         <HomeHeader>
           <HomeLogo src={logo} />
+          <NavWrap>
+          Signed in as {displayName()} 
+          
           <Button  onClick={() => {signOut()}}>LOGOUT</Button>
+
+          </NavWrap>
+
+         
         </HomeHeader>
 
         <TabHeaders>

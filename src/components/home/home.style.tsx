@@ -12,6 +12,7 @@ export const HomeHeader = styled.header`
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 20px 0;
     
 `
 
@@ -57,4 +58,29 @@ export const TabText = styled.p`
         text-align: center;
     }   
 `
+export const NavWrap = styled.div`
+display: flex;
+align-items: center;
+gap: 30px;
+
+&>button{
+        border: none;
+        width: 152px;
+        height: 56px;
+        text-align: center;
+        border-radius: 8px;
+        text-transform: uppercase;
+        font-size: 0.9375rem;
+        font-weight: var(--font-weight-200);
+        letter-spacing: 1px;
+        transition: all 250ms ease-in-out;
+        color: var(--color-pry-100);
+        background: var(--color-pry-300);
+        &:hover {
+          color: var(--color-pry-300);
+          background: var(--color-pry-100);
+        }
+}
+`
+    
 
