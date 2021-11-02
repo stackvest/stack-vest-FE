@@ -12,7 +12,7 @@ export function authenticate() {
   showConnect({
     appDetails: {
       name: "StackVest",
-      icon: window.location.origin + "/logo512.png",
+      icon: window.location.origin + "/logo.png",
     },
     redirectTo: "/",
     onFinish: () => {
